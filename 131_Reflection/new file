@@ -1,0 +1,46 @@
+import java.lang.Class;
+import java.lang.reflect.*;
+
+public class Reflection{
+
+    public static void main(String[] args){
+    
+        //three ways to create the built in Class object
+        Class a = Class.forName("Dog");
+        
+        Dog dog1 = new Dog();
+        Class b = dog1.getClass();
+        
+        Class c = Dog.class;
+        
+        //class name
+        String class_name = c.getName();
+        
+        //modifiers
+        String modifiers = c.getModifiers();
+        
+        //super class
+        Class super_class = c.getSuperClass();
+        String super_class_name = super_class.getName();
+        
+        System.out.println("object from class: " + class_name
+                           + "\nmodifiers: " + modifiers 
+                           + "\nsuper class: " + super_class_name);
+    }
+}
+
+class Animal{
+
+    public void eat(){
+    
+        System.out.prinln("im eating");
+    }
+}
+
+class Dog extends Animal{
+
+    public void bark(){
+    
+        System.out.println("woof woof");
+    }
+}
