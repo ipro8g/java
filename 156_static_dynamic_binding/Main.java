@@ -48,6 +48,18 @@ class CarInsurance extends Insurance{
 
 /*
 
+binding is the linking between a method call and a method definition
+
+Output:
+
+premium: 100
+category: Insurance
+
+static binding occurs by example in a method overloading, because was defined in that way by the programmer
+
+dynamic binding occurs by example in a method overriding, because only will happens at the runtime when a 
+subclass is created taking the place of parents overrided method
+
 Always remember that private, static, and final methods are bonded using static binding and virtual methods are bonded using dynamic binding. 
 
 Similarly, method overloading is the best example of static binding, and method overriding is the example of dynamic binding.
