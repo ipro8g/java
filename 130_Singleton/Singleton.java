@@ -29,3 +29,9 @@ class Database{
         System.out.println("you are connected to the database now");
     }
 } 
+
+/*
+
+a singleton object in java is a normal class that only will have 1 object
+
+*/
