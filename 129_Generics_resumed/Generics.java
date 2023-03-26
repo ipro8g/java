@@ -35,6 +35,25 @@ public class Generics{
         item6.info();
         
         class4.inner_info();
+        
+        //additional the use of superclass Object very close to generics
+        
+        ArrayList<Object> arr = new ArrayList<Object>();
+        
+        arr.add(new Dog("fuffy"));
+        arr.add(new Cat("tiggi"));
+        
+        for(Object animal: arr){
+        
+            if(animal instanceof Dog){
+            
+                Dog.class.cast(animal).noise();
+            }else if(animal instanceof Cat){
+            
+                Cat.class.cast(animal).noise();
+            }
+        }
+        
     }
 }
 
@@ -86,4 +105,36 @@ abstract class class4{
     }
 
     public abstract void info(); 
+}
+
+
+
+class Dog{
+
+    String name;
+
+    Dog(String n){
+    
+        name = n;
+    }
+
+    public void noise(){
+     
+        System.out.println("woof woof");
+    }
+}
+
+class Cat{
+
+    String name;
+
+    Cat(String n){
+    
+        name = n;
+    }
+
+    public void noise(){
+     
+        System.out.println("meow meow");
+    }
 }
