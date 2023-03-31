@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Main{
 
@@ -15,5 +16,11 @@ public class Main{
             
                 System.out.println(a);
             }
+                
+            
+                
+            List<String> uniq = arr.stream().distinct().collect(Collectors.toList());
+                
+            System.out.println(uniq);
         }
 }
