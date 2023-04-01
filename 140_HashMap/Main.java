@@ -75,5 +75,7 @@ public class Main{
         numbers2.put("Seven", 7);
         
         System.out.println("hashmap: " + numbers2);
+        
+        numbers.forEach((k, v)-> System.out.println("key: " + k + ", value: " + v));
     }
 }
