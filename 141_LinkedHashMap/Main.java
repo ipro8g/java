@@ -3,6 +3,8 @@ import java.util.Map.Entry;
 
 public class Main{
     
+    // linkedhashmap implements most hash map features and also mantains insertion order
+    
     public static void main(String[] args){
     
         LinkedHashMap<String, Integer> even = new LinkedHashMap<>();
