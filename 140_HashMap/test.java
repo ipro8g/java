@@ -99,5 +99,10 @@ public class test{
         l2.removeAll(l1);
         
         System.out.println("missing element: " + l2);
+        
+        for(Entry m:map1.entrySet()){   
+       
+            System.out.println(m.getKey()+" "+m.getValue());    
+        }  
     }
 }
