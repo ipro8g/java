@@ -85,6 +85,7 @@ public class Main{
         
         System.out.println("Keys are greater than or equal to 40: " + tree_map2.tailMap(40));
         
+        //return the entire entrySet for keys: keySet() or values()
         System.out.println("Keys are less than 40: " + tree_map2.headMap(40));
     }
     
