@@ -33,6 +33,15 @@ public class Main{
         
             System.out.println(list_iterate.next() + ", ");
         }
+        
+        //list descending iterator
+        Iterator<String> desc = languages.descendingIterator();
+        System.out.println("reversed LinkedList: ");
+        
+        while(desc.hasNext()){
+        
+            System.out.println(desc.next() + ", ");
+        }
          
         //reverse iterate    
         System.out.println("reversed LinkedList: ");
