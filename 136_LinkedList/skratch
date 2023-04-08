@@ -1,0 +1,52 @@
+public class test{
+  
+    public static void main(String args[]){
+ 
+        Node head = new Node(10);
+        
+        Node first = new Node(20);
+        head.next = first;
+        
+        Node second = new Node(30);
+        first.next = second;
+        
+        Node third = new Node(40);
+        second.next = third;
+        
+        Node fourth = new Node(50);
+        third.next = fourth;
+        
+        print_list(head);
+        
+    }
+    
+    public static void print_list(Node head){
+        
+        Node n = new Node(head);
+        System.out.println(n.data);
+        
+        while(n.next != null){
+        
+            n = n.next;
+        
+            System.out.println(n.data);
+        }
+    }
+}
+
+class Node{
+
+    public int data;
+    public Node next = null;
+
+    public Node(int d){
+    
+        data = d;
+    }
+
+    public Node(Node n){
+    
+        this.data = n.data;
+        this.next = n.next;
+    }
+}  
