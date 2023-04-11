@@ -1,0 +1,29 @@
+import java.util.HashMap;
+
+public class Main{
+
+    public static void main(String[] args){
+    
+        set s = new set();
+        
+        s.add("hello");
+        
+        System.out.println(s.map.size());
+    }
+}
+
+class set{
+
+    public static HashMap<Object, boolean> map;
+
+    set(){
+    
+        
+    }
+    
+    public boolean add(Object o){
+    
+        map.put(o, true);
+    }
+    
+}
