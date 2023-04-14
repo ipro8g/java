@@ -1,0 +1,55 @@
+public class Main{
+  
+    public static void main(String args[]){
+        
+    }
+}
+
+class stack{
+
+    Node head, tail;
+
+    public stack(){
+    
+        Node n = new Node();
+    
+        head = Node(n);
+    }
+    
+    public void add(Object o){
+    
+        Node n = new Node(o);
+        n.previous = head;
+        head.next = n;
+    }
+    
+    public static void print_list(Node head){
+        
+        Node n = new Node(head);
+        System.out.println(n.data);
+        
+        while(n.next != null){
+        
+            n = n.next;
+        
+            System.out.println(n.data);
+        }
+    }
+}
+
+class Node{
+
+    public Object data;
+    public Node next = null;
+
+    public Node(Object o){
+    
+        data = o;
+    }
+
+    public Node(Node n){
+    
+        this.data = n.data;
+        this.next = n.next;
+    }
+}  
